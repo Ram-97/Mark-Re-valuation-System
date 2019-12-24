@@ -1,0 +1,59 @@
+CREATE DATABASE internalmark;
+
+CREATE TABLE student(
+     rollno varchar(10) PRIMARY KEY,
+   	 username varchar(20),
+    password varchar(10)
+    );
+
+INSERT INTO `internalmark`.`student` (`rollno`, `username`, `password`) VALUES ('17cs02', 'Mano', 'Mano');
+INSERT INTO `internalmark`.`student` (`rollno`, `username`, `password`) VALUES ('17cs03', 'Rajesh', 'Rajesh');
+INSERT INTO `internalmark`.`student` (`rollno`, `username`, `password`) VALUES ('17cs04', 'Guna', 'Guna');
+INSERT INTO `internalmark`.`student` (`rollno`, `username`, `password`) VALUES ('17cs05', 'Raghul', 'Raghul');
+INSERT INTO `internalmark`.`student` (`rollno`, `username`, `password`) VALUES ('17cs06', 'Saran', 'Saran');
+INSERT INTO `internalmark`.`student` (`rollno`, `username`, `password`) VALUES ('17cs07', 'Baskar', 'Baskar');
+INSERT INTO `internalmark`.`student` (`rollno`, `username`, `password`) VALUES ('17cs08', 'Ravi', 'Ravi');
+
+CREATE TABLE admin(
+    id INT(10) PRIMARY KEY AUTO_INCREMENT,
+    username varchar(20),
+    password varchar(10)
+    );
+
+INSERT INTO `internalmark`.`admin` (`username`, `password`) VALUES ('admin', 'admin');
+
+CREATE TABLE course(
+     rollno varchar(10) PRIMARY KEY,
+    sub1 varchar(50),
+    sub2 varchar(50),
+    sub3 varchar(50),
+    sub4 varchar(50),
+    sub5 varchar(50),
+    sub6 varchar(50)
+    );
+
+CREATE TABLE photocopy(
+     rollno varchar(10) PRIMARY KEY,
+    sub1 varchar(50),
+    sub2 varchar(50),
+    sub3 varchar(50),
+    sub4 varchar(50),
+    sub5 varchar(50),
+    sub6 varchar(50),
+    amount varchar(10),
+    paymentid Varchar(20)
+    );
+
+CREATE TABLE documents (
+  id Int(4) PRIMARY KEY AUTO_INCREMENT,
+  rollno VARCHAR(20),
+  filename VARCHAR(100),
+  path VARCHAR(100)
+  );
+
+CREATE TABLE proof(
+  id Int(4) PRIMARY KEY AUTO_INCREMENT,
+  rollno VARCHAR(20),
+  filename VARCHAR(100),
+  path VARCHAR(100)
+  );
